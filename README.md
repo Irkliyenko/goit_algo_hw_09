@@ -2,10 +2,10 @@ In this analysis, I compared the performance of two algorithms: the greedy algor
 
 **Table 1: Search Results for Dynamic Programming and Greedy Algorithm.**
 
-| Algorithm | Amount: 100 | Amount: 325 | Amount: 769 | Amount: 1428 |
-| --------- | ----------- | ----------- | ----------- | ------------ | ----- | ---- | ---- | ------ | ----- | ---- | ---- |
-| Dynamic   | 50: 2       | 50: 6       | 25: 1       | 50: 15       | 10: 1 | 5: 1 | 2: 2 | 50: 28 | 25: 1 | 2: 1 | 1: 1 |
-| Greedy    | 50: 2       | 50: 6       | 25: 1       | 50: 15       | 10: 1 | 5: 1 | 2: 2 | 50: 28 | 25: 1 | 2: 1 | 1: 1 |
+| Algorithm | Amount: 100 | Amount: 325                     | Amount: 769                     | Amount: 1428              |
+| --------- | ----------- | ------------------------------- | ------------------------------- | ------------------------- |
+| Dynamic   | 50: 2       | 50: 6, 25: 1, 10: 1, 5: 1, 2: 2 | 50: 15, 10: 1, 5: 1, 2: 2, 1: 1 | 50: 28, 25: 1, 2: 1, 1: 1 |
+| Greedy    | 50: 2       | 50: 6, 25: 1, 10: 1, 5: 1, 2: 2 | 50: 15, 10: 1, 5: 1, 2: 2, 1: 1 | 50: 28, 25: 1, 2: 1, 1: 1 |
 
 Next, I compared the time required for each algorithm to complete their tasks, as shown in Table 2. Specifically, for this task, the greedy algorithm significantly outperformed dynamic programming, and the time difference increased with higher amounts. For instance, for an amount of 100, the greedy algorithm was 91 times faster, while for an amount of 1428, the speed difference increased to 318 times. This performance gap can be attributed to the dynamic programming table creation. The time complexity of the dynamic programming algorithm for the coin change problem is O(nm), where n is the amount and m is the number of different coin denominations. While for the greedy algorithm it is O(n).
 
